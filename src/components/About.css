@@ -1,0 +1,107 @@
+/* Container with the same height as sidebar */
+.about-container {
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 1px auto;
+  min-height: 92%; /* Ensure the height matches the sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* To position the header absolutely */
+}
+
+/* Header styles inside the About section */
+.header {
+  background-color: #282828;
+  padding: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute; /* Position it in the top-right corner */
+  top: 1px;
+  right: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; 
+}
+
+/* Align navbar links inside the About box */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 18px;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #88c200;
+}
+
+/* Styling for the content inside About Me */
+.about-content {
+  text-align: left;
+  color: white;
+  margin-top: 10px; /* Add margin to avoid overlapping with header */
+  margin-right: 20px;   /* Remove large right margin */
+  width: 100%;       /* Make sure it takes full width of the container */
+
+}
+
+.separatorAbout {
+  width: 3%;
+  margin: 15px auto;
+  border: 4px solid #88c200;
+  border-radius: 40px;
+  margin-right: 863px;
+  margin-bottom: 30px;
+}
+
+.about-content h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 768px;
+}
+
+.about-content p {
+  font-family: 'Calibri', 'Arial', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Service section styles */
+.services {
+  margin-top: 5px;
+ 
+}
+
+.service-cards {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.service-card {
+  background-color: #2d2d2d;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+.service-card p{
+  font-family: 'Calibri', 'Arial', sans-serif;
+}
+
+.service-card h3 {
+  color: #ffffff;
+}

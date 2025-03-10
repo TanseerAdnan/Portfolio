@@ -1,0 +1,28 @@
+.android-container {
+  background-color: #1c1c1c; /* Background color you wanted */
+  padding: 20px;
+  border-radius: 15px;
+  margin: 1px auto;
+  text-align: center;
+  min-height: 92%; /* Ensure the full page height is covered */
+  }
+  
+ 
+.android-heading{
+  font-family: 'Poppins', sans-serif;
+  color: #88c200; /* Greenish-yellow color for the heading */
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+  
+.back-button3 {
+  background: none;
+  border: none;
+  color: #88c200;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+  

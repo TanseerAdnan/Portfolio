@@ -1,0 +1,20 @@
+/* custom-swal.css */
+.custom-swal-popup {
+    border-radius: 10px; /* Rounded corners */
+    background-color: #1c1c1c; /* Dark background matching app */
+  }
+  
+  .custom-swal-title {
+    color: #ffffff; /* White text color */
+  }
+  
+  .custom-swal-confirm-button {
+    background-color: #88c200 !important; /* Custom button color */
+    color: #ffffff !important; /* White text on the button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+
+  

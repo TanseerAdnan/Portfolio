@@ -1,0 +1,40 @@
+.python-container {
+  background-color: #1c1c1c;  ; /* Dark background color */
+  padding: 20px;
+  border-radius: 15px;
+  margin: 1px auto;
+  text-align: center;
+  min-height: 92%; /* Ensure the full page height is covered */
+}
+
+.python-heading {
+  font-family: 'Poppins', sans-serif;
+  color: #ffcc00; /* Yellow color for the heading */
+  font-size: 28px;
+  margin-bottom: 40px; /* Spacing below the heading */
+}
+
+.back-button2 {
+  background: none;
+  border: none;
+  color: #ffcc00; /* Consistent color with heading */
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space below the button */
+}
+
+.back-icon {
+  margin-right: 5px; /* Space between icon and text */
+  font-size: 24px;
+}
+
+.project-cards {
+  display: flex;               /* Apply flexbox */
+  gap: 30px;                   /* Space between the cards */
+ 
+  align-items: flex-start;      /* Align the cards at the top */
+  flex-wrap: wrap;              /* Wrap the cards to a new row if the container is too small */
+  margin-top: 20px;             /* Spacing above the cards */
+}

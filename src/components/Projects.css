@@ -1,0 +1,87 @@
+/* Container with the same height as sidebar */
+.projects-container {
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 1px auto;
+  min-height: 92%; /* Ensure the height matches the sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative; /* To position the header absolutely */
+}
+
+/* Center the heading in the projects section */
+.projects-heading {
+  text-align: center;
+  color: #ffffff; /* Yellowish color for heading */
+  font-size: 36px;
+  margin-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Separator style for Projects section */
+.separatorProjects {
+  border: 2px solid #88c200; /* Yellowish color for the line */
+  width:100px;
+  border-radius: 5px;
+}
+
+/* Grid layout for the projects */
+.projects-grid {
+  display: flex;
+  justify-content: space-around; /* Space between items */
+  flex-wrap: nowrap; /* Keep all items in a single row */
+  margin: 20px 0; /* Space around the grid */
+}
+
+/* Individual project boxes */
+.project-box {
+  background-color: #282828;
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #222222;
+}
+
+.project-box:hover {
+  transform: scale(1.05); /* Add a hover effect */
+}
+
+/* Icons inside the project boxes */
+.project-icon {
+  font-size: 50px;
+  color: #88c200; /* Green color for icons */
+  margin-bottom: 15px;
+}
+
+/* Project titles */
+.project-box h3 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Additional separators below the project boxes (if needed) */
+
+.separatorProjects2 {
+  border: 1px solid #88c200; /* Yellowish color for the line */
+  margin-top: 50px;
+  width: 500px;
+ 
+}
+
+.separatorProjects3 {
+  border: 1px solid #88c200; /* Yellowish color for the line */
+  margin-bottom: -70px ; /* Space around the lines */
+}
+

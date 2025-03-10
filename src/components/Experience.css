@@ -1,0 +1,96 @@
+/* Container with the same height as sidebar */
+.experience-container {
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 1px auto;
+    min-height: 92%; /* Ensure the height matches the sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the start */
+    position: relative; /* To position the header absolutely */
+}
+
+/* Experience Header Styles */
+.experience-header {
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    margin-bottom: 40px; /* Space between header and any content below */
+}
+
+.experience-header h2{
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 46px;
+}
+
+/* Icon next to the Experience heading */
+.experience-icon {
+    font-size: 30px;
+    color: #88c200; /* Match the icon color with the theme */
+    margin-right: 10px; /* Space between the icon and text */
+    margin-left: 8px;
+    margin-top: 33px;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    padding-left: 30px; /* Adjust space for the timeline icons */
+    border-left: 2px solid #88c200; /* Line connecting the dots */
+    margin-top: 5px; /* Move the line up to touch the separator */
+    margin-left: 20px;
+}
+
+/* Each timeline item */
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Timeline circle icon */
+.timeline-icon {
+    width: 15px;
+    height: 15px;
+    background-color: #88c200;
+    border-radius: 50%;
+    position: absolute;
+    left: -38px; /* Place the dot on top of the line */
+    top: 0; /* Align with the top of the content */
+}
+
+/* Timeline content container */
+.timeline-content {
+    background-color: #2828288a;
+    padding: 4px 15px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 800px;
+}
+
+/* Experience duration style */
+.experience-duration {
+    font-weight: bold;
+    color: #88c200;
+    margin-bottom: 10px;
+    text-align: right; 
+}
+
+/* Adjust heading inside timeline */
+.timeline-content h3 {
+    margin-bottom: 2px;
+    color: #fff;
+    text-align: left;
+}
+
+/* Paragraph styles */
+.timeline-content p {
+    margin-top: 20px;
+    text-align: left;
+    color: #d1d1d1;
+    font-family: 'Calibri', 'Arial', sans-serif;
+}

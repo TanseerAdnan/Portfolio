@@ -1,0 +1,20 @@
+/* src/components/Header.css */
+.header {
+    background-color: #1c1c1c;
+    padding: 20px;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .navbar ul li a:hover {
+    color: yellow;
+  }
+  
