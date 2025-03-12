@@ -2,12 +2,11 @@ import React from 'react';
 import './Modal.css';
 import { FaTimes } from 'react-icons/fa';
 
-const Modal = ({ isOpen, onClose, title, description, techStack, link }) => {
+const Modal = ({ isOpen, onClose, title, description, techStack, link, buttonText = "View Project" }) => {
   if (!isOpen) return null;
 
   const handleOverlayClick = (e) => {
-    // Prevent closing when clicking inside the modal content
-    e.stopPropagation();
+    e.stopPropagation(); // Prevent closing when clicking inside the modal
   };
 
   return (
@@ -23,7 +22,7 @@ const Modal = ({ isOpen, onClose, title, description, techStack, link }) => {
           ))}
         </ul>
         <a href={link} className="modal-link-button" target="_blank" rel="noopener noreferrer">
-          View Project
+          {buttonText}
         </a>
       </div>
     </div>

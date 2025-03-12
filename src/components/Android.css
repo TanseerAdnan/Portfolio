@@ -1,21 +1,20 @@
 .android-container {
-  background-color: #1c1c1c; /* Background color you wanted */
+  background-color: #1c1c1c; /* Background color */
   padding: 20px;
   border-radius: 15px;
   margin: 1px auto;
   text-align: center;
-  min-height: 92%; /* Ensure the full page height is covered */
-  }
-  
- 
-.android-heading{
+  min-height: 92%; /* Ensure full page height is covered */
+}
+
+.android-heading {
   font-family: 'Poppins', sans-serif;
-  color: #88c200; /* Greenish-yellow color for the heading */
+  color: #88c200; /* Greenish-yellow color */
   font-size: 28px;
   margin-bottom: 40px;
 }
-  
-.back-button3 {
+
+.back-button {
   background: none;
   border: none;
   color: #88c200;
@@ -25,4 +24,8 @@
   align-items: center;
   margin-bottom: 20px;
 }
-  
+
+.back-icon {
+  margin-right: 5px; /* Space between icon and text */
+  font-size: 24px;
+}
