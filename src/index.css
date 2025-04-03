@@ -12,11 +12,20 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.content {
+  flex: 1;
+  margin-left: 20px;
+}
 .main-content {
   display: flex;
   padding: 20px;
 }
-.content {
-  flex: 1;
-  margin-left: 20px;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-content {
+    display: block; /* Change to block display on mobile */
+    padding: 10px; /* Optional: Adjust padding for mobile */
+  }
 }

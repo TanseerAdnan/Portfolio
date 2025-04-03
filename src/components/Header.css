@@ -1,20 +1,67 @@
 /* src/components/Header.css */
 .header {
-    background-color: #1c1c1c;
-    padding: 20px;
+  background-color: #1c1c1c;
+  padding: 20px;
+}
+
+/* Navbar styles */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar ul li {
+  flex: 1; /* Allow items to grow and shrink */
+  text-align: center; /* Center align text */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  display: block; /* Make the link a block element for easier clicking */
+}
+
+.navbar ul li a:hover {
+  color: yellow;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content{
+    margin: 0;
   }
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+  .main-content{
+    width: 100%;
   }
+ .navbar ul {
+        flex-direction: row;
+        justify-content: center;
+        /* gap: 2rem; */
+    }
+
+    .navbar ul li {
+        font-size: 0.9rem;
+    }
+
   .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
+      padding: 15px; /* Increase padding for better touch targets */
+      text-align: center; /* Center align text */
   }
-  .navbar ul li a:hover {
-    color: yellow;
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 15px;
+      display: flex; /* Adjust header padding for smaller screens */
   }
-  
+
+  .navbar ul li a {
+      font-size: 0.9em; /* Reduce font size for smaller screens */
+  }
+}

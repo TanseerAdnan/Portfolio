@@ -76,8 +76,10 @@ const Python = () => {
           description={currentProject.modalContent.description}
           techStack={currentProject.modalContent.techStack}
           link={currentProject.modalContent.link}
+          apkLink={currentProject.modalContent.apkLink || ""} 
         />
       )}
+      
     </div>
   );
 };

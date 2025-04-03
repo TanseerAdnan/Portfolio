@@ -18,17 +18,27 @@
   padding: 8px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; 
   position: absolute; /* Position it in the top-right corner */
   top: 1px;
   right: 0px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700; 
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    position: static; /* Change position for smaller screens */
+    margin: 10px auto; /* Add margin for spacing */
+    text-align: center; /* Center-align text */
+  }
+}
+
 
 /* Align navbar links inside the About box */
 .navbar ul {
   list-style: none;
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
 }
 
@@ -92,7 +102,8 @@
 .service-card {
   background-color: #2d2d2d;
   padding: 20px;
-  width: 200px;
+  width: 400px;
+  height: 90px;
   border-radius: 10px;
   color: white;
   
@@ -104,4 +115,5 @@
 
 .service-card h3 {
   color: #ffffff;
+  width: 150px;
 }

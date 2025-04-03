@@ -21,14 +21,17 @@
     text-align: center; /* Center text */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     position: relative; /* Allows positioning of the close icon */
+    overflow: hidden; /* Ensure content doesn’t overflow */
 }
 
+/* Header styles */
 .modal-title {
     color: #88c200; /* Greenish-yellow color for title */
     margin-bottom: 10px;
     font-size: 24px; /* Heading size */
 }
 
+/* Description styles */
 .modal-description {
     margin: 10px 0;
     text-align: justify; /* Align text evenly across each line */
@@ -37,6 +40,7 @@
     font-family: 'Calibri', sans-serif; /* Apply Calibri font */
 }
 
+/* Tech Stack styles */
 .modal-techstack-heading {
     margin: 20px 0;
     font-size: 18px; /* Heading size for tech stack */
@@ -63,6 +67,7 @@
     margin-right: 8px; /* Space between bullet point and text */
 }
 
+/* Link button styles */
 .modal-link-button {
     background-color: #88c200;
     color: #fff;
@@ -73,12 +78,38 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
-  }
+}
 
+.modal-link-button:empty,
+.modal-link-button[href=""],
+.modal-link-button[href="#"],
+.modal-link-button[href="null"],
+.modal-link-button[disabled] {
+  background-color: #aaa !important; /* Ensure it's gray */
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important; /* Disable interactions */
+  text-decoration: none !important;
+}
+
+.modal-link-button.disabled {
+    background-color: #aaa !important;
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+  }
 .modal-link-button:hover {
     background-color: #75a800; /* Darken on hover */
 }
 
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+/* Close icon styles */
 .modal-close-icon {
     position: absolute;
     top: 10px;
@@ -90,4 +121,37 @@
 
 .modal-close-icon:hover {
     color: #ffffff; /* Change color on hover */
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Make modal width more suitable for mobile */
+        max-width: 90%; /* Ensure the modal doesn’t exceed screen width */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .modal-title {
+        font-size: 20px; /* Smaller font size for titles on mobile */
+    }
+
+    .modal-description {
+        font-size: 0.9rem; /* Slightly smaller font size for better readability */
+    }
+
+    .modal-techstack-heading {
+        font-size: 16px; /* Adjust tech stack heading font size */
+    }
+
+    .modal-techstack-item {
+        font-size: 0.85rem; /* Adjust font size for tech stack items */
+    }
+
+    .modal-link-button {
+        font-size: 0.8rem; /* Adjust button font size for smaller screens */
+    }
+
+    .modal-close-icon {
+        font-size: 1.2rem; /* Make close icon slightly smaller */
+    }
 }

@@ -18,9 +18,9 @@ const Android = () => {
     setIsModalOpen(false); 
   };
 
-  const techStack = ["Java", "Room Database",];
-
-  const projectLink = "https://github.com/your-repo"; 
+  const techStack = ["Java", "Room Database"];
+  const projectLink = "https://github.com/TanseerAdnan/Whatsalert"; 
+  const apkDownloadLink = "/Whatsalert-1.0-250403-release.apk"; // File should be inside public/
 
   return (
     <div className="android-container">
@@ -41,11 +41,11 @@ const Android = () => {
         onClose={handleCloseModal}
         title="WhatsAlert - WhatsApp Reminder App"
         description="Developed an Android application that allows users to set reminders and automatically navigate to WhatsApp 
-                     with the pre-saved message. The app integrates with SQLite for local storage and built on using by following best
+                     with the pre-saved message. The app integrates with SQLite for local storage and follows best 
                      industry practices."
         techStack={techStack}
-        link={projectLink}
-        buttonText="Download App" 
+        projectLink={projectLink}
+        apkLink={apkDownloadLink} // Pass APK link here
       />
     </div>
   );

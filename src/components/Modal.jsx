@@ -2,7 +2,7 @@ import React from 'react';
 import './Modal.css';
 import { FaTimes } from 'react-icons/fa';
 
-const Modal = ({ isOpen, onClose, title, description, techStack, link, buttonText = "View Project" }) => {
+const Modal = ({ isOpen, onClose, title, description, techStack, projectLink, apkLink }) => {
   if (!isOpen) return null;
 
   const handleOverlayClick = (e) => {
@@ -21,9 +21,22 @@ const Modal = ({ isOpen, onClose, title, description, techStack, link, buttonTex
             <li key={index} className="modal-techstack-item">{tech}</li>
           ))}
         </ul>
-        <a href={link} className="modal-link-button" target="_blank" rel="noopener noreferrer">
-          {buttonText}
-        </a>
+
+        {/* Buttons Section */}
+        <div className="modal-buttons">
+          <a href={projectLink} className="modal-link-button" target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+          {apkLink ? (
+  <a href={apkLink} className="modal-link-button" download>
+    Download App
+  </a>
+) : (
+  <button className="modal-link-button disabled" disabled>
+    Download App
+  </button>
+)}
+        </div>
       </div>
     </div>
   );
