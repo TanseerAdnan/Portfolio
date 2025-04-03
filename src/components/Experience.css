@@ -94,33 +94,3 @@
     color: #d1d1d1;
     font-family: 'Calibri', 'Arial', sans-serif;
 }
-
-@media screen and (max-width: 375px) {
-    .timeline {
-        padding-left: 10px;
-        margin-left: 10px;
-        width: calc(100% - 20px);
-    }
-
-    .timeline-icon {
-        width: 10px;
-        height: 10px;
-        left: -25px;
-    }
-
-    .timeline-content {
-        padding: 10px;
-    }
-
-    .experience-duration {
-        font-size: 0.75rem;
-    }
-
-    .timeline-content h3 {
-        font-size: 0.95rem;
-    }
-
-    .timeline-content p {
-        font-size: 0.8rem;
-    }
-}

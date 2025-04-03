@@ -18,6 +18,9 @@
   padding: 8px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
+  position: absolute; /* Position it in the top-right corner */
+  top: 1px;
+  right: 0px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700; 
 }
@@ -25,7 +28,7 @@
 /* Align navbar links inside the About box */
 .navbar ul {
   list-style: none;
-  display: flex !important;
+  display: flex;
   justify-content: space-around;
 }
 
@@ -89,7 +92,7 @@
 .service-card {
   background-color: #2d2d2d;
   padding: 20px;
-  width: 400px;
+  width: 200px;
   border-radius: 10px;
   color: white;
   
@@ -101,5 +104,4 @@
 
 .service-card h3 {
   color: #ffffff;
-  width: 150px;
 }

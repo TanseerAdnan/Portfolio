@@ -84,24 +84,4 @@
   border: 1px solid #88c200; /* Yellowish color for the line */
   margin-bottom: -70px ; /* Space around the lines */
 }
-@media screen and (max-width: 375px) {
-  .projects-grid{
-    display: block;
-  }
-  .projects-heading {
-    font-size: 1.5rem;
-  }
 
-  .project-box {
-    width: 80%;
-    padding: 15px;
-    margin: 0 auto;
-  }
-
-  .project-icon {
-    font-size: 35px;
-  }
-  .separatorProjects2{
-    width: 100px;
-  }
-}

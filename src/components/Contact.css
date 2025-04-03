@@ -85,13 +85,3 @@ h2 {
   transform: scale(1.1);
   transition: transform 0.2s ease;
 }
-@media screen and (max-width: 375px) {
-  .icon-title {
-    font-size: 12px; /* Smaller font for very small screens */
-  }
-  
-  .icon-box2 {
-    width: 95%; /* Full width with minimal margin */
-    padding: 8px;
-  }
-}
