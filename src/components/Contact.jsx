@@ -23,7 +23,7 @@ const Contact = () => {
         </a>
 
         {/* Gmail box */}
-        <a href="hashiradnan55@example.com" className="icon-link">
+        <a href="mailto:hashiradnan55@example.com" className="icon-link">
           <div className="icon-box2">
             <div className="icon-row">
               <FaEnvelope className="contact-icon" size={40} />

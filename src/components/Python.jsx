@@ -75,7 +75,7 @@ const Python = () => {
           title={currentProject.modalContent.title}
           description={currentProject.modalContent.description}
           techStack={currentProject.modalContent.techStack}
-          link={currentProject.modalContent.link}
+          projectLink={currentProject.modalContent.link}
           apkLink={currentProject.modalContent.apkLink || ""} 
         />
       )}

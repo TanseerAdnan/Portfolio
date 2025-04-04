@@ -29,11 +29,11 @@ const Modal = ({ isOpen, onClose, title, description, techStack, projectLink, ap
           </a>
           {apkLink ? (
   <a href={apkLink} className="modal-link-button" download>
-    Download App
+    App
   </a>
 ) : (
   <button className="modal-link-button disabled" disabled>
-    Download App
+    App
   </button>
 )}
         </div>

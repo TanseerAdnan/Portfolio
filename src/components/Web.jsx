@@ -19,8 +19,8 @@ const Web = () => {
   };
 
   const techStack = ["Node.js", " Express.js", "Tailwind CSS", "MongoDB", "Vite"];
-  const projectLink = "https://quiz-game-pl.netlify.app/"; // Replace with your project link
-
+  const projectLink = "https://github.com/TanseerAdnan/QuizApp-Mern"; // Replace with your project link
+  const apkDownloadLink = "https://quiz-game-pl.netlify.app/";
   return (
     <div className="web-container">
       <button onClick={() => navigate('/projects')} className="back-button">
@@ -43,7 +43,8 @@ const Web = () => {
                     backend.Ensured an optimal user experience across devices by implementing a responsive design approach,
                     adapting the user interface seamlessly from large desktop screens to mobile devices."
         techStack={techStack}
-        link={projectLink}
+        projectLink={projectLink}
+        apkLink={apkDownloadLink}
       />
     </div>
   );
